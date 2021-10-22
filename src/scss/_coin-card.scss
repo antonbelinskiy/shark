@@ -1,0 +1,332 @@
+.coin-card {
+  background: #FEFEFE;
+  box-shadow: 0px 10px 34px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  padding: 45px 25px 0px 37px;
+  margin-bottom: 100px;
+  display: flex;
+  position: relative;
+  &--left {
+    width: 57%;
+  }
+  &-info {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    &--left {
+      display: flex;
+    }
+    &--text {
+      margin-left: 16px;
+    }
+    &--name {
+      font-size: 36px;
+      line-height: 48px;
+      text-align: left;
+      color: #222222;
+    }
+    &-type {
+      margin-top: 13px;
+      background: #245DEE;
+      border-radius: 80px;
+      color: #fff;
+      padding: 4px 12px 4px 13px;
+      font-size: 18px;
+      max-width: 74px;
+    }
+    &--right {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding-right: 27px;
+      padding-bottom: 14px;
+      padding-top: 8px;
+    }
+    &--right_adress {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 24px;
+      transition: all 0.3s ease-in-out;
+      color: #222222;
+      & svg {
+        margin-left: 11px;
+        transition: all 0.3s ease-in-out;
+        fill: #222222;
+      }
+      &:hover {
+        color: #245DEE;
+        transition: all 0.3s ease-in-out;
+        & svg path {
+          fill: #245DEE;
+          transition: all 0.3s ease-in-out;
+        }
+      }
+      &:focus {
+        color: #2BF387;
+        transition: all 0.3s ease-in-out;
+        & svg path {
+          stroke: #2BF387;
+          transition: all 0.3s ease-in-out;
+        }
+      }
+      & svg path {
+        transition: all 0.3s ease-in-out;
+      }
+    }
+  }
+  &-image {
+    width: 104px;
+    height: 104px;
+    border-radius: 100%;
+  }
+  &-panel {
+    align-items: center;
+    background: #FEFEFE;
+    border: 1px solid #245DEE;
+    box-sizing: border-box;
+    box-shadow: 0px 10px 34px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    padding-top: 15px;
+    justify-content: space-between !important;
+    padding-right: 32px;
+    padding-bottom: 18px;
+    padding-left: 30px;
+    margin-top: 40px;
+    & .coin-votes:last-of-type,
+    & .today:last-of-type,
+    & .network:last-of-type,
+    {
+      background: #F2F2F2;
+      border-radius: 110px;
+      padding: 5px 14px 4px 14px;
+    }
+    & .votes-listening:last-of-type,
+    & .status:last-of-type {
+      background: #1B98E8;
+      border-radius: 110px;
+      color: #fff;
+      padding: 5px 14px 4px 14px
+    }
+    &--info_header {
+      display: flex;
+      justify-content: flex-start & p {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 24px;
+        color: #222222;
+      }
+    }
+    &--info {
+      display: flex;
+      justify-content: flex-start;
+      margin-top: 15px;
+    }
+  }
+}
+
+.сoin-panel-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  &>*:first-child {
+    margin-bottom: 20px;
+  }
+}
+
+.coin-card-info--right_images {
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+  & img {
+    margin-right: 15px;
+  }
+  & svg {
+    width: 36px;
+    height: 36px;
+    transition: all 0.3s ease-in-out;
+    fill: transparent;
+    cursor: pointer;
+    &:hover {
+      fill: #F7DE3B;
+      transition: all 0.3s ease-in-out;
+    }
+  }
+}
+
+.coin-card--right {
+  margin-left: 42px;
+  & .adv {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+.coin-card-panel--info .status,
+.coin-card-panel--info .votes-listening {
+  background: #1B98E8;
+  border-radius: 110px;
+  color: #fff;
+  padding: 5px 14px 4px 14px
+}
+
+.coin-info {
+  margin-top: 70px;
+  font-size: 18px;
+  line-height: 24px;
+  color: #222222;
+  & p {
+    margin-top: 28px;
+  }
+}
+
+.coin-card--vote-block {
+  margin-top: 66px;
+  padding: 20px 0;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  border: none;
+  border-top: 1px solid #222222;
+  border-bottom: 1px solid #222222;
+  align-items: center;
+}
+
+.vote-block {
+  &--title {
+    font-size: 28px;
+    line-height: 37px;
+    color: #222222;
+    font-weight: 700;
+  }
+  &--subtitle {
+    font-size: 18px;
+    line-height: 24px;
+    color: #222222;
+    font-weight: 400;
+  }
+  &--btn {
+    margin-top: 20px;
+    font-size: 24px;
+    line-height: 32px;
+    color: #fff;
+    font-weight: 400;
+    padding: 7px 37px 9px 37px;
+    background: #222222;
+    border-radius: 110px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      box-shadow: 0px 0px 16px rgba(22, 22, 22, 0.5);
+      transition: all 0.3s ease-in-out;
+    }
+  }
+  &--subinfo {
+    margin-top: 10px;
+  }
+}
+
+.coin-card-footer {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.coin-card-right--infoblock {
+  margin-top: 50px;
+}
+
+.row-header {
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 24px;
+  /* identical to box height */
+  color: #222222;
+}
+
+.row-info {
+  margin-bottom: 15px;
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+  &-left {
+    font-size: 16px;
+    line-height: 21px;
+    width: 38%;
+  }
+  &-right {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    line-height: 24px;
+    & a {
+      color: #222222;
+      display: flex;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+      & img {
+        margin-right: 10px;
+      }
+      &:hover {
+        color: #245DEE;
+        transition: all 0.3s ease-in-out;
+        & svg path {
+          fill: #245DEE;
+          transition: all 0.3s ease-in-out;
+        }
+      }
+      & svg path {
+        fill: #222;
+        transition: all 0.3s ease-in-out;
+      }
+    }
+  }
+}
+
+.watchlist {
+  font-size: 24px;
+  line-height: 32px;
+  color: #222222;
+  font-weight: 700;
+  & svg path {
+    fill: #F7DE3B
+  }
+  & span {
+    background: #F7DE3B;
+    padding: 5px 14px 5px 14px;
+    color: #fff;
+    font-size: 19px;
+    line-height: 25px;
+    text-align: center;
+    color: #FFFFFF;
+    border-radius: 110px;
+    margin: 0 7px
+  }
+}
+
+.coin-card-right-row {
+  margin-bottom: 40px;
+}
+
+.row-info-right svg {
+  margin-right: 10px;
+}
+
+.buyNow {
+  flex-direction: column;
+  & a {
+    margin-bottom: 15px;
+    padding: 11.5px 19px 11.5px 19px;
+    border: 1px solid hsl(0, 0%, 13%);
+    border-radius: 90px;
+  }
+  &--row {
+    margin-top: 37px;
+    align-items: flex-start;
+  }
+}

@@ -1,0 +1,7 @@
+@font-face {
+   font-family: 'Rakoon Personal Use';
+   src: url(../../fonts/Rakoon_PersonalUse.woff);
+   src: url(../../fonts/Rakoon_PersonalUse.woff2);
+
+}
+@include font-face("Rakoon_PersonalUse", "Rakoon_PersonalUse", 400);

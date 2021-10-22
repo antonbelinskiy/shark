@@ -1,0 +1,58 @@
+.personal {
+    padding-bottom: 120px;
+}
+
+.personal-subtitle {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #222;
+    width: 70%;
+    margin: 10px auto;
+    text-align: center;
+}
+
+.promote-title {
+    width: 40%;
+    margin: 60px auto;
+    text-align: center;
+    color: #222222;
+    font-size: 36px;
+    line-height: 48px;
+    margin-bottom: 20px;
+}
+
+.promote-subtitle {
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    color: #222222;
+    width: 44%;
+    margin: 0 auto;
+    margin-bottom: 80px;
+
+}
+
+.nothing-link {
+    width: fit-content;
+    display: block;
+    margin-top: 0;
+}
+
+.clear-table {
+    padding: 82px 0 97px 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.coins-table.clear-table a {
+    color: #245dee;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 31px;
+    &:hover {
+        color: #fff;
+        transition: all 0.3s ease-in-out;
+    }
+}

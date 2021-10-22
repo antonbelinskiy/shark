@@ -1,0 +1,97 @@
+.contacts {
+    padding: 0px 250px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding-bottom: 120px;
+    &-wrapper {
+        display: flex;
+    }
+}
+
+.contacts::before {
+    content: url(../img/yellow-round-b.webp);
+    position: absolute;
+    z-index: -2;
+    left: -140px;
+    top: -161px;
+
+}
+
+
+.contacts::after {
+    content: url(../img/yellow-round-l.webp);
+    position: absolute;
+    right: 86px;
+    bottom: -80px;
+    z-index: -2;
+
+}
+
+.contacts-item {
+    padding: 27px 25px 15px 15px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    background: #FEFEFE;
+    border: 1px solid #245DEE;
+    box-sizing: border-box;
+    box-shadow: 0px 10px 34px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    display: flex;
+    width: 318px;
+    text-align: left;
+    flex-direction: column;
+
+
+    .contacts-item--title {
+        text-align: left;
+        margin-bottom: 15px; 
+    }
+
+    &--text {
+        font-size: 16px;
+        line-height: 21px;
+        font-weight: 400;
+        color: #222;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    &--btn {
+        font-size: 16px;
+        line-height: 21px;
+        color: #245DEE;
+        margin-top: 25px;
+        padding: 7px 20px 9px 20px        ;
+        border: 1px solid #245DEE;
+        text-decoration: none;
+        font-weight: 400;
+        text-transform: lowercase;
+        border-radius: 110px;
+        text-align: center;
+        align-self: center;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+            background-color: #245DEE;
+            color: #FEFEFE;
+            transition: all 0.3s ease-in-out;
+        }
+
+    }
+    &--subtitle {
+        font-size: 13px;
+        margin-top: 12px;
+        line-height: 17px;
+        text-align: center;
+    }
+    &--btn_first {
+        font-size: 24px;
+        margin-top: 60px;
+        line-height: 31px;
+        padding: 7px 37px 9px;
+        border-radius: 110px;
+        text-transform: none;
+    }
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html5>
+@@include('components/page-blocks/_head.html',{
+"lang":"En",
+"title":"CryptoSharks",
+"keywords":"",
+"favicon":"img/favicons/favicon",
+})
+
+<body>
+	@@include('components/page-blocks/_header.html')
+
+    <main class="main">
+        <div class="container">
+         <div class="form-wrapper">
+             <img src="./img/blue-big.webp" alt="round" class="big-round round">
+             <img src="./img/blue-little.webp" alt="round" class="middle-round round">
+
+            <form action="" class="auth-form" id="form_id" method="post" action="">
+
+                <p class="auth-form-title">
+                   Register
+                </p>
+                <p class="auth-form-subtitle">
+                    Create your account at CryptoSharks to unlock new features.
+                </p>
+                <input placeholder="Name " type="text" class="auth-form-input">
+                <input id="email" name="email"  placeholder="Email " type="text" class="auth-form-input">
+                <input placeholder="Password " type="text" class="auth-form-input">
+                <input placeholder="Confirm Password " type="text" class="auth-form-input">
+                <p class="captcha">captcha here</p>
+                <div class="blacklist-form-row">
+                   <div class="blacklist-form-left">
+                       <input class="blacklist-form-checkbox" type="checkbox" name="" id="black-list-checkbox">
+                       <label for="blacklist-checkbox"></label>
+                       <p class="blacklist-form-title">
+                        Agree to terms and conditions</p>
+                   </div>
+               </div>
+               <a href="" class="auth-form-btn">Register</a>
+               <a href="/login.html" class="auth-form-link">Already registered? Login here.</a>
+            </form>
+         </div>
+
+
+        </div>
+    </main>
+
+@@include('components/page-blocks/_footer.html')
+@@include('components/page-blocks/_scripts.html')
+</body>
+
+</html>

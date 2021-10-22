@@ -1,0 +1,238 @@
+.promoted {
+  padding-bottom: 104px;
+  &-title {
+    font-size: 36px;
+    line-height: 48px;
+    text-align: left;
+    color: #222222;
+    font-weight: 700;
+  }
+  &-header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  &-link {
+    color: #245DEE
+  }
+}
+
+.coins-table {
+  background: #FEFEFE;
+  box-shadow: 0px 10px 34px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+  &--link {
+    font-size: 21px;
+    line-height: 28px;
+    text-align: left;
+    color: #FFFFFF;
+    text-decoration: none;
+  }
+}
+
+.coins-table--header {
+  background: #222222;
+  border-radius: 20px 20px 0px 0px;
+  margin-top: 10px;
+  display: flex;
+  padding: 13px 45px 15px 30px;
+  .hash {
+    margin-right: 80px;
+    padding-left: 10px;
+  }
+  .name {
+    margin-right: 40px;
+  }
+  .chain {
+    margin-right: 85px;
+  }
+  .symbol {
+    margin-right: 72px;
+  }
+  .cap {
+    margin-right: 64px;
+  }
+  .price {
+    margin-right: 96px;
+  }
+  .launch {
+    margin-right: 50px;
+  }
+  .votes {
+    margin-right: 85px;
+  }
+}
+
+.coins-table .name {
+  margin-right: 15px;
+}
+
+.coins-table .number {
+  margin-right: 22px;
+}
+
+.coins-table .symbol {
+  margin-right: 80px;
+}
+
+.coins-table .cap {
+  margin-right: 87px;
+}
+
+.coins-table .price {
+  margin-right: 40px;
+}
+
+.coins-table .launch {
+  margin-right: 40px;
+  width: 82px;
+}
+
+.coins-table-votings {
+  align-items: baseline !important;
+}
+
+.coins-table .votes {
+  margin-right: 50px;
+}
+
+.coins-table .chain {
+  width: 120px;
+  margin-right: 20px;
+}
+
+.coin-image {
+  width: 42px;
+  height: 41px;
+  border-radius: 100px;
+}
+
+.coins-table .number {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 85px;
+}
+
+.coins-table a {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 18px;
+  margin-left: 0;
+  line-height: 24px;
+  text-align: left;
+  color: #222222;
+}
+
+.coins-table-row {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #C4C4C4;
+  padding: 11px 0;
+  transition: all 0.3s ease-in-out;
+  padding: 5px 34px 5px 40px;
+  position: relative;
+}
+
+.coins-table-col {
+  display: flex;
+  align-items: center;
+}
+.coins-table-star {
+  cursor: pointer;
+  background-image: url(../img/star.svg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: .3s;
+  height: 22px;
+  width: 20px;
+  position: relative;
+}
+.coins-table-star-inner {
+  display: flex;
+  align-items: center;
+  top: 50%;
+  left: -30px;
+  position: absolute;
+  opacity: 0;
+  height: 100%;
+  padding-right: 20px;
+  transition: all 0.3s ease-in-out;
+  transform: translateY(-50%);
+  &:hover .coins-table-star {
+    opacity: 1;
+    .coins-table-star-tooltip {
+      opacity: 0;
+    }
+  }
+  .coins-table-star-tooltip {
+    pointer-events: none;
+    white-space: nowrap;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s;
+    padding: 4px 8px;
+    font-size: 12px;
+    background-color: #fff;
+    color: #1B98E8;
+    text-align: center;
+    position: absolute;
+    left: -39px;
+    top: -39px;
+    &::after {
+      content: '';
+      position: absolute;
+    }
+  }
+  .coins-table-star:hover {
+    .coins-table-star-tooltip {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+}
+
+.coins-table-star-inner:hover .coins-table-row,
+.coins-table-row:hover {
+  background: #C4C4C4;
+  transition: all 0.3s ease-in-out;
+  .coins-table-star-inner {
+    visibility: visible;
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+  }
+}
+
+.coins-table-row:last-child {
+  border-bottom: none;
+  &:hover {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+}
+
+.coins-table .chain span {
+  display: inline-block;
+  max-width: 120px;
+  text-overflow: ellipsis;
+  overflow-x: hidden;
+  background: #F2F2F2;
+  border-radius: 110px;
+  padding: 5px 14px 4px 14px;
+}
+
+.coins-table .votes span,
+.coins-table .vote {
+  background: #1B98E8;
+  border-radius: 110px;
+  color: #fff;
+  padding: 5px 14px 4px 14px
+}
+
+.coins-table .vote {
+  background: #245DEE
+}

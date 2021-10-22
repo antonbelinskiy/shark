@@ -1,0 +1,67 @@
+.list-coin {
+    padding: 0 50px;
+    padding-bottom: 200px;
+    display: flex;
+
+}
+
+.list-coin-item {
+    background: #FEFEFE;
+    border: 1px solid #245DEE;
+    box-sizing: border-box;
+    box-shadow: 0px 10px 34px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding-bottom: 20px;
+    margin-right: 32px;
+    color: #222222;
+    width: 33%;
+    &--header {
+        background: radial-gradient(89.88% 106.85% at 104.59% 103.12%, #C2F1FF 0%, #2BF3E1 29.69%, #1B98E8 60.94%, #3638BF 100%), #F84469;
+        border-radius: 9px 9px 0px 0px;
+        font-size: 33px;
+        line-height: 33px;
+        font-family: 'Rakoon_PersonalUse', sans-serif;
+        font-weight: 400;
+        text-align: center;
+        color: #fff;
+        padding: 55px 0;
+
+    }
+
+    &--title {
+        font-family: Rakoon_PersonalUse, sans-serif;
+    }
+    &:nth-child(2) &--header {
+        background: radial-gradient(100.95% 97.92% at 103.16% 100%, #F7DE3B 0%, #F86F44 35.94%, #D71251 66.67%, #5B3698 100%), #F84469;
+    }
+    &:last-child &--header {
+        background: radial-gradient(97% 118.89% at 111.71% 100%, #FFFBFC 0%, #C0FFDD 29.69%, #3CFF95 60.94%, #00D964 100%), radial-gradient(89.88% 106.85% at 104.59% 103.12%, #C2F1FF 0%, #2BF3E1 29.69%, #1B98E8 60.94%, #3638BF 100%), #F84469;
+    }
+    &--text {
+        font-size: 16px;
+        line-height: 21px;
+        text-align: center;
+        padding: 30px 20px;
+        font-weight: 400;
+    }
+    &--btn {
+        margin: 0 100px;
+        display: block;
+        text-align: center;
+        transition: all 0.3s ease-in-out;
+        font-size: 24px;
+        line-height: 31px;
+        text-transform: none;
+        &:hover {
+            background-color: #245DEE;
+            color: #fff;
+            transition: all 0.3s ease-in-out;
+        }
+    }
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+}
+
